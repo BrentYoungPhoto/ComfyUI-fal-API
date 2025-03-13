@@ -7,6 +7,7 @@ node_list = [
 "llm_node",
 "vlm_node",
 "trainer_node",
+ "iclightv2_node",
 ]
 
 NODE_CLASS_MAPPINGS = {}
