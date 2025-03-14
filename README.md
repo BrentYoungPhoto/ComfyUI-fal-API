@@ -1,6 +1,6 @@
 # ComfyUI-fal-API
 
-Custom nodes for using Flux models with  fal API in ComfyUI with only one API Key for all.
+Custom nodes for using Flux models with fal API in ComfyUI with only one API Key for all.
 
 ## Table of Contents
 
@@ -14,30 +14,29 @@ Custom nodes for using Flux models with  fal API in ComfyUI with only one API Ke
   - [Vision Language Models (VLMs)](#vision-language-models-vlms)
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
+- [Contributing](#contributing)
+- [Support](#support)
+- [Acknowledgments](#acknowledgments)
 
 ## Installation
 
 1. Navigate to your ComfyUI custom nodes directory:
-   ```
+   ```bash
    cd custom_nodes
    ```
-
 2. Clone this repository:
+   ```bash
+   git clone git@github.com:BrentYoungPhoto/ComfyUI-fal-API.git
    ```
-   git clone https://github.com/gokayfem/ComfyUI-fal-API.git
-   ```
-
 3. Install the required dependencies:
-   ```
+   ```bash
    pip install -r requirements.txt
    ```
 
 ## Configuration
 
 1. Get your fal API key from [fal.ai](https://fal.ai/dashboard/keys)
-
 2. Open the `config.ini` file inside `custom_nodes/ComfyUI-fal-API`
-
 3. Replace `<your_fal_api_key_here>` with your actual fal API key:
    ```ini
    [API]
@@ -56,7 +55,8 @@ After installation and configuration, restart ComfyUI. The new nodes will be ava
 - **Flux Dev (fal)**: Use the development version of Flux for image generation
 - **Flux Schnell (fal)**: Fast image generation with Flux Schnell
 - **Flux Pro 1.1 (fal)**: Latest version of Flux Pro for image generation
-- **Flux General (fal)**: ControlNets, Ipadapters, Loras for Flux Dev
+- **Flux General (fal)**: ControlNets, IPAdapters, Loras for Flux Dev
+- **IC-Light V2 (fal)**: High-quality image generation and relighting using the IC-Light V2 model
 
 ### Video Generation
 
@@ -98,15 +98,15 @@ After installation and configuration, restart ComfyUI. The new nodes will be ava
 
 If you encounter any errors during installation or usage, try the following:
 
-1. Ensure you have the latest version of ComfyUI installed
+1. Ensure you have the latest version of ComfyUI installed.
 2. Update this custom node package:
-   ```
-   cd custom_nodes/ComfyUI-FLUX-fal-API
+   ```bash
+   cd custom_nodes/ComfyUI-fal-API
    git pull
    pip install -r requirements.txt
    ```
 3. If you're using ComfyUI Windows Portable, you may need to install fal-client manually:
-   ```
+   ```bash
    ComfyUI_windows_portable>.\python_embeded\python.exe -m pip install fal-client
    ```
 
@@ -120,4 +120,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Support
 
-If you encounter any issues or have questions, please open an issue on the [GitHub repository](https://github.com/gokayfem/ComfyUI-fal-API/issues).
+If you encounter any issues or have questions, please open an issue on the [GitHub repository](https://github.com/BrentYoungPhoto/ComfyUI-fal-API/issues).
+
+## Acknowledgments
+
+A big thank you to [gokayfem](https://github.com/gokayfem) for creating the original [ComfyUI-fal-API](https://github.com/gokayfem/ComfyUI-fal-API) repository. This fork builds upon their work with the addition of the **IC-Light V2** node. Your contributions to the ComfyUI community are greatly appreciated!
+
